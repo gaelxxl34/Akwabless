@@ -7,6 +7,7 @@ import Login from "./features/auth/Login";
 import Registration from "./features/auth/Registration";
 import AdminLayout from "./pages/layouts/AdminLayout";
 import Dashboard from "./pages/members/dashboard/Dashboard";
+import DirectorLayout from "./pages/layouts/DirectorLayout";
 
 function App() {
   const router = createBrowserRouter([
@@ -41,6 +42,40 @@ function App() {
         {
           path: "/profile",
           element: <Registration />,
+        },
+        {
+          path: "/director",
+          element: <DirectorLayout />,
+          children: [
+            {
+              path: "/director",
+              element: <>Director Dashoard</>,
+            },
+            {
+              path: "/director/users",
+              element: <>users</>,
+            },
+            {
+              path: "/director/projects",
+              element: <>projects</>,
+            },
+            {
+              path: "/director/donations",
+              element: <>donations</>,
+            },
+            {
+              path: "/director/stories",
+              element: <>stories</>,
+            },
+            {
+              path: "/director/brochure-generator",
+              element: <>brochure-generator</>,
+            },
+            {
+              path: "/director/settings",
+              element: <>settings</>,
+            },
+          ],
         },
         {
           path: "/admin",
