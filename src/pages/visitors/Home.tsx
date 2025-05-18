@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { content } from "../../libs/data/contentData";
+import { content } from "../../libs/data/visitorContentData";
 
 const Home = () => {
   const [language, setLanguage] = useState<"en" | "fr">("en");

@@ -8,6 +8,7 @@ import Registration from "./features/auth/Registration";
 import AdminLayout from "./pages/layouts/AdminLayout";
 import Dashboard from "./pages/members/dashboard/Dashboard";
 import DirectorLayout from "./pages/layouts/DirectorLayout";
+import DirectorDashboard from "./pages/director/dashboard/Dashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -49,7 +50,7 @@ function App() {
           children: [
             {
               path: "/director",
-              element: <>Director Dashoard</>,
+              element: <DirectorDashboard />,
             },
             {
               path: "/director/users",
