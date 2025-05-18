@@ -9,6 +9,7 @@ import AdminLayout from "./pages/layouts/AdminLayout";
 import Dashboard from "./pages/members/dashboard/Dashboard";
 import DirectorLayout from "./pages/layouts/DirectorLayout";
 import DirectorDashboard from "./pages/director/dashboard/Dashboard";
+import AdminDashboard from "./pages/admin/dashboard/Dashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -84,7 +85,7 @@ function App() {
           children: [
             {
               path: "/admin",
-              element: <>Dashoard</>,
+              element: <AdminDashboard />,
             },
             {
               path: "/admin/users",
