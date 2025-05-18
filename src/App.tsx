@@ -2,10 +2,11 @@ import React from "react";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import NotFound from "./pages/not-found/NotFound";
-import Home from "./pages/home/Home";
+import Home from "./pages/visitors/Home";
 import Login from "./features/auth/Login";
 import Registration from "./features/auth/Registration";
 import AdminLayout from "./pages/layouts/AdminLayout";
+import Dashboard from "./pages/members/dashboard/Dashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,22 @@ function App() {
         },
         {
           path: "/registration",
+          element: <Registration />,
+        },
+        {
+          path: "/dashboard",
+          element: <Dashboard />,
+        },
+        {
+          path: "/projects",
+          element: <Registration />,
+        },
+        {
+          path: "/testimonies ",
+          element: <Registration />,
+        },
+        {
+          path: "/profile",
           element: <Registration />,
         },
         {
