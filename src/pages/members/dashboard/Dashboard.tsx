@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import * as echarts from "echarts";
+import { text } from "../../../libs/data/memberContentData";
 
 const Dashboard: React.FC = () => {
   const [language, setLanguage] = useState<"en" | "fr">("en");
@@ -7,51 +8,6 @@ const Dashboard: React.FC = () => {
 
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "fr" : "en");
-  };
-
-  const text = {
-    en: {
-      greeting: "Hello, David!",
-      subtitle: "Here's a look at our community impact.",
-      totalMembers: "Total Members",
-      newMembers: "New Members this Month",
-      fundsRaised: "Funds Raised",
-      livesTouched: "Lives Touched",
-      infoCenter: "Information Center",
-      featuredProjects: "Featured Projects",
-      testimonies: "Testimonies",
-      milestones: "Milestones",
-      downloadBrochure: "Download Brochure",
-      readMore: "Read More",
-      support: "Support",
-      dashboard: "Dashboard",
-      projects: "Projects",
-      donations: "Donations",
-      settings: "Settings",
-      logout: "Logout",
-      profile: "Profile",
-    },
-    fr: {
-      greeting: "Bonjour, David!",
-      subtitle: "Voici un aperçu de l'impact de notre communauté.",
-      totalMembers: "Membres Totaux",
-      newMembers: "Nouveaux Membres ce Mois",
-      fundsRaised: "Fonds Collectés",
-      livesTouched: "Vies Touchées",
-      infoCenter: "Centre d'Information",
-      featuredProjects: "Projets en Vedette",
-      testimonies: "Témoignages",
-      milestones: "Étapes Importantes",
-      downloadBrochure: "Télécharger la Brochure",
-      readMore: "Lire Plus",
-      support: "Soutenir",
-      dashboard: "Tableau de Bord",
-      projects: "Projets",
-      donations: "Dons",
-      settings: "Paramètres",
-      logout: "Déconnexion",
-      profile: "Profil",
-    },
   };
 
   // Initialize the community impact chart
