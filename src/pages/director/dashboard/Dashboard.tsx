@@ -103,9 +103,7 @@ const DirectorDashboard: React.FC = () => {
             <div className="mr-2">
               <i className="fas fa-hands-helping text-[#D4AF37] text-xl"></i>
             </div>
-            <span className="font-bold text-xl font-['Montserrat']">
-              Akwabless
-            </span>
+            <span className="font-bold text-xl text-[#D4AF37]">Akwabless</span>
           </div>
           <button
             onClick={toggleSidebar}
@@ -254,7 +252,7 @@ const DirectorDashboard: React.FC = () => {
           </div>
           <div className="flex-1 md:flex md:items-center md:justify-between">
             <div className="hidden md:block">
-              <h1 className="text-xl font-semibold text-gray-800 font-['Montserrat']">
+              <h1 className="text-xl font-semibold text-gray-800 ">
                 {language === "en" ? text.en.members : text.fr.members}
               </h1>
             </div>
