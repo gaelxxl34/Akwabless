@@ -102,36 +102,42 @@ const Dashboard: React.FC = () => {
             <span className="font-bold text-2xl text-[#D4AF37]">Akwabless</span>
           </div>
           <div className="hidden md:flex space-x-6">
-            <button
-              onClick={() => setActiveTab("dashboard")}
-              className={`cursor-pointer whitespace-nowrap ${
-                activeTab === "dashboard"
-                  ? "text-[#D4AF37] font-semibold"
-                  : "text-gray-600"
-              }`}
-            >
-              {language === "en" ? text.en.dashboard : text.fr.dashboard}
-            </button>
-            <button
-              onClick={() => setActiveTab("projects")}
-              className={`cursor-pointer whitespace-nowrap ${
-                activeTab === "projects"
-                  ? "text-[#D4AF37] font-semibold"
-                  : "text-gray-600"
-              }`}
-            >
-              {language === "en" ? text.en.projects : text.fr.projects}
-            </button>
-            <button
-              onClick={() => setActiveTab("donations")}
-              className={` cursor-pointer whitespace-nowrap ${
-                activeTab === "donations"
-                  ? "text-[#D4AF37] font-semibold"
-                  : "text-gray-600"
-              }`}
-            >
-              {language === "en" ? text.en.donations : text.fr.donations}
-            </button>
+            <a href="#dashboard">
+              <button
+                onClick={() => setActiveTab("dashboard")}
+                className={`cursor-pointer whitespace-nowrap ${
+                  activeTab === "dashboard"
+                    ? "text-[#D4AF37] font-semibold"
+                    : "text-gray-600"
+                }`}
+              >
+                {language === "en" ? text.en.dashboard : text.fr.dashboard}
+              </button>
+            </a>
+            <a href="#projects">
+              <button
+                onClick={() => setActiveTab("projects")}
+                className={`cursor-pointer whitespace-nowrap ${
+                  activeTab === "projects"
+                    ? "text-[#D4AF37] font-semibold"
+                    : "text-gray-600"
+                }`}
+              >
+                {language === "en" ? text.en.projects : text.fr.projects}
+              </button>
+            </a>
+            <a href="#testimonies">
+              <button
+                onClick={() => setActiveTab("testimonies")}
+                className={` cursor-pointer whitespace-nowrap ${
+                  activeTab === "testimonies"
+                    ? "text-[#D4AF37] font-semibold"
+                    : "text-gray-600"
+                }`}
+              >
+                {language === "en" ? text.en.testimonies : text.fr.testimonies}
+              </button>
+            </a>
           </div>
         </div>
         <div className="flex items-center space-x-4">
@@ -209,7 +215,7 @@ const Dashboard: React.FC = () => {
         </div>
 
         {/* Main Content */}
-        <div className="container mx-auto px-4 py-8">
+        <div className="container mx-auto px-4 py-8" id="dashboard">
           {/* Welcome Banner */}
           <div className="bg-gradient-to-r from-[#F5F5DC] to-[#F8F8E8] rounded-xl p-8 mb-8 shadow-sm border border-[#D4AF37]/20">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between">
@@ -413,7 +419,7 @@ const Dashboard: React.FC = () => {
           </div>
 
           {/* Featured Projects */}
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+          <h2 className="text-2xl font-bold text-gray-800 mb-6" id="projects">
             {language === "en"
               ? text.en.featuredProjects
               : text.fr.featuredProjects}
@@ -547,7 +553,10 @@ const Dashboard: React.FC = () => {
           </div>
 
           {/* Testimonies Section */}
-          <h2 className="text-2xl font-bold text-gray-800 mb-6">
+          <h2
+            className="text-2xl font-bold text-gray-800 mb-6"
+            id="testimonies"
+          >
             {language === "en" ? text.en.testimonies : text.fr.testimonies}
           </h2>
           <div className="bg-white rounded-xl p-8 shadow-sm mb-10 relative">

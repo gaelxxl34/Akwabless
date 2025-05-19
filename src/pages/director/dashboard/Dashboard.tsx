@@ -26,10 +26,10 @@ const DirectorDashboard: React.FC = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
-  const handleDeleteClick = (id: number) => {
-    setMemberToDelete(id);
-    setShowDeleteModal(true);
-  };
+  // const handleDeleteClick = (id: number) => {
+  //   setMemberToDelete(id);
+  //   setShowDeleteModal(true);
+  // };
 
   const confirmDelete = () => {
     // Logique de suppression à implémenter
@@ -272,7 +272,7 @@ const DirectorDashboard: React.FC = () => {
               <div className="relative group">
                 <button className="flex items-center space-x-2 cursor-pointer !rounded-button whitespace-nowrap">
                   <div className="h-9 w-9 rounded-full bg-[#D4AF37] flex items-center justify-center text-white">
-                    <span className="font-semibold">A</span>
+                    <span className="font-semibold">D</span>
                   </div>
                   <i className="fas fa-chevron-down text-gray-500 text-xs"></i>
                 </button>
@@ -510,17 +510,17 @@ const DirectorDashboard: React.FC = () => {
                     >
                       {language === "en" ? text.en.status : text.fr.status}
                     </th>
-                    <th
+                    {/* <th
                       scope="col"
                       className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
                     >
                       {language === "en" ? text.en.actions : text.fr.actions}
-                    </th>
+                    </th> */}
                   </tr>
                 </thead>
                 <tbody className="bg-white divide-y divide-gray-200">
                   {paginatedMembers.map((member) => (
-                    <tr key={member.id} className="hover:bg-gray-50">
+                    <tr key={member.id} className="hover:bg-gray-50 ">
                       <td className="px-6 py-4 whitespace-nowrap">
                         <input
                           type="checkbox"
@@ -565,7 +565,7 @@ const DirectorDashboard: React.FC = () => {
                           {member.status}
                         </span>
                       </td>
-                      <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                      {/* <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                         <div className="flex items-center justify-end space-x-2">
                           <button className="text-blue-600 hover:text-blue-800 cursor-pointer !rounded-button whitespace-nowrap">
                             <i className="fas fa-eye"></i>
@@ -580,7 +580,7 @@ const DirectorDashboard: React.FC = () => {
                             <i className="fas fa-trash-alt"></i>
                           </button>
                         </div>
-                      </td>
+                      </td> */}
                     </tr>
                   ))}
                 </tbody>
