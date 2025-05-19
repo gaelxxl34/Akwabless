@@ -6,6 +6,9 @@ const Dashboard: React.FC = () => {
   const [language, setLanguage] = useState<"en" | "fr">("en");
   const [activeTab, setActiveTab] = useState<string>("dashboard");
 
+  const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
+  const sidebarRef = React.useRef<HTMLDivElement>(null);
+
   const toggleLanguage = () => {
     setLanguage(language === "en" ? "fr" : "en");
   };
@@ -90,6 +93,26 @@ const Dashboard: React.FC = () => {
     }
   }, []);
 
+  // Close sidebar when clicking outside
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        sidebarRef.current &&
+        !sidebarRef.current.contains(event.target as Node)
+      ) {
+        setSidebarOpen(false);
+      }
+    };
+
+    if (sidebarOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [sidebarOpen]);
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation Bar */}
@@ -154,7 +177,7 @@ const Dashboard: React.FC = () => {
               </div>
               <i className="fas fa-chevron-down text-gray-500 text-xs"></i>
             </button>
-            <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 hidden group-hover:block">
+            <div className="absolute right-0 mt-0 w-48 bg-white rounded-md shadow-lg py-1 hidden group-hover:block">
               <a
                 href="#"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -175,7 +198,11 @@ const Dashboard: React.FC = () => {
               </a>
             </div>
           </div>
-          <button className="md:hidden">
+          <button
+            className="md:hidden"
+            onClick={() => setSidebarOpen(true)}
+            aria-label="Open sidebar"
+          >
             <i className="fas fa-bars text-gray-600"></i>
           </button>
         </div>
@@ -183,29 +210,38 @@ const Dashboard: React.FC = () => {
 
       <div className="pt-[70px]">
         {/* Sidebar for mobile */}
-        <div className="md:hidden fixed left-0 top-[70px] bottom-0 w-64 bg-white shadow-md transform -translate-x-full transition-transform duration-300 ease-in-out z-20">
+        <div
+          ref={sidebarRef}
+          className={`md:hidden fixed left-0 top-[70px] bottom-0 w-64 bg-white shadow-md transform transition-transform duration-300 ease-in-out z-20 ${
+            sidebarOpen ? "translate-x-0" : "-translate-x-full"
+          }`}
+        >
           <div className="py-4 px-6">
             <div className="space-y-4">
               <a
-                href="#"
+                href="#dashboard"
+                onClick={() => setSidebarOpen(false)}
                 className="block py-2 text-gray-600 hover:text-[#D4AF37]"
               >
                 {language === "en" ? text.en.dashboard : text.fr.dashboard}
               </a>
               <a
-                href="#"
+                href="#projects"
+                onClick={() => setSidebarOpen(false)}
                 className="block py-2 text-gray-600 hover:text-[#D4AF37]"
               >
                 {language === "en" ? text.en.projects : text.fr.projects}
               </a>
               <a
-                href="#"
+                href="#testimonies"
+                onClick={() => setSidebarOpen(false)}
                 className="block py-2 text-gray-600 hover:text-[#D4AF37]"
               >
-                {language === "en" ? text.en.donations : text.fr.donations}
+                {language === "en" ? text.en.testimonies : text.fr.testimonies}
               </a>
               <a
                 href="#"
+                onClick={() => setSidebarOpen(false)}
                 className="block py-2 text-gray-600 hover:text-[#D4AF37]"
               >
                 {language === "en" ? text.en.settings : text.fr.settings}
