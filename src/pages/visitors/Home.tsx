@@ -1,12 +1,20 @@
 import React, { useState } from "react";
 import { content } from "../../libs/data/visitorContentData";
+import { Link } from "react-router-dom";
+import Registration from "../../components/dialog/registration";
 
 const Home = () => {
   const [language, setLanguage] = useState<"en" | "fr">("en");
+  const [openJoin, setopenJoin] = useState<Boolean>(false);
   const t = content[language];
 
   return (
-    <div className="min-h-screen font-sans text-gray-800">
+    <div className="min-h-screen font-sans text-gray-800 relative">
+      {openJoin && (
+        <div className="fixed inset-0 z-[9999] bg-black/85 flex items-center justify-center">
+          <Registration setopenJoin={setopenJoin} />
+        </div>
+      )}
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -43,22 +51,29 @@ const Home = () => {
             </a>
           </div>
           <div className="flex items-center space-x-4">
-            <button
-              onClick={() => setLanguage("en")}
-              className={`px-2 py-1 rounded-full cursor-pointer whitespace-nowrap ${
-                language === "en" ? "bg-[#F5F5DC] text-[#228B22]" : ""
-              }`}
+            {language === "en" ? (
+              <button
+                onClick={() => setLanguage("fr")}
+                className="px-2 py-1 rounded-full cursor-pointer whitespace-nowrap bg-[#F5F5DC] text-[#228B22] "
+              >
+                🇫🇷 FR
+              </button>
+            ) : (
+              <button
+                onClick={() => setLanguage("en")}
+                className="px-2 py-1 rounded-full cursor-pointer whitespace-nowrap bg-[#F5F5DC] text-[#228B22] "
+              >
+                🇬🇧 EN
+              </button>
+            )}
+
+            <Link
+              to="/login"
+              className="flex items-center border border-[#D4AF37] text-[#D4AF37] bg-transparent hover:bg-[#D4AF37] hover:text-white transition-colors duration-300 rounded-xl px-5 py-1 cursor-pointer whitespace-nowrap"
             >
-              🇬🇧 EN
-            </button>
-            <button
-              onClick={() => setLanguage("fr")}
-              className={`px-2 py-1 rounded-full cursor-pointer whitespace-nowrap ${
-                language === "fr" ? "bg-[#F5F5DC] text-[#228B22]" : ""
-              }`}
-            >
-              🇫🇷 FR
-            </button>
+              <i className="fas fa-sign-in-alt mr-2 mt-1"></i>
+              login
+            </Link>
             <button className="md:hidden text-[#228B22]">
               <i className="fas fa-bars text-xl"></i>
             </button>
@@ -82,12 +97,17 @@ const Home = () => {
             {t.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button className="bg-[#D4AF37] hover:bg-[#C09B2D] text-white px-6 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap">
+            <button
+              onClick={() => setopenJoin(true)}
+              className="bg-[#D4AF37] hover:bg-[#C09B2D] text-white px-6 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap"
+            >
               {t.hero.joinButton}
             </button>
-            <button className="bg-transparent hover:bg-white/20 border-2 border-white text-white px-6 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap">
-              {t.hero.exploreButton}
-            </button>
+            <a href="#projects">
+              <button className="bg-transparent hover:bg-white/20 border-2 border-white text-white px-6 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap">
+                {t.hero.exploreButton}
+              </button>
+            </a>
           </div>
         </div>
       </section>
@@ -365,7 +385,10 @@ const Home = () => {
       >
         <div className="container mx-auto px-4 text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">{t.cta.title}</h2>
-          <button className="bg-[#D4AF37] hover:bg-[#C09B2D] text-white px-8 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap">
+          <button
+            onClick={() => setopenJoin(true)}
+            className="bg-[#D4AF37] hover:bg-[#C09B2D] text-white px-8 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap"
+          >
             {t.cta.button}
           </button>
         </div>
