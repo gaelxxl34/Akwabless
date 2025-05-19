@@ -182,18 +182,21 @@ const Dashboard: React.FC = () => {
                 href="#"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
+                <i className="fas fa-user mr-2"></i>
                 {language === "en" ? text.en.profile : text.fr.profile}
               </a>
               <a
                 href="#"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
+                <i className="fas fa-cog mr-2"></i>
                 {language === "en" ? text.en.settings : text.fr.settings}
               </a>
               <a
                 href="#"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
+                <i className="fas fa-sign-out-alt mr-2"></i>
                 {language === "en" ? text.en.logout : text.fr.logout}
               </a>
             </div>
