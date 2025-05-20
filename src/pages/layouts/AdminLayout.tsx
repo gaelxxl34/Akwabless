@@ -231,23 +231,26 @@ const AdminLayout = () => {
                   </div>
                   <i className="fas fa-chevron-down text-gray-500 text-xs"></i>
                 </button>
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 hidden group-hover:block">
+                <div className="absolute right-0 mt-0 w-48 bg-white rounded-md shadow-lg py-1 hidden group-hover:block">
                   <a
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
+                    <i className="fas fa-user mr-2"></i>
                     {language === "en" ? text.en.profile : text.fr.profile}
                   </a>
                   <a
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
+                    <i className="fas fa-cog mr-2"></i>
                     {language === "en" ? text.en.settings : text.fr.settings}
                   </a>
                   <a
                     href="#"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
+                    <i className="fas fa-sign-out-alt mr-2"></i>
                     {language === "en" ? text.en.logout : text.fr.logout}
                   </a>
                 </div>

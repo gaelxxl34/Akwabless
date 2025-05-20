@@ -12,6 +12,8 @@ import DirectorDashboard from "./pages/director/dashboard/Dashboard";
 import AdminDashboard from "./pages/admin/dashboard/Dashboard";
 import PasswordRecovery from "./features/auth/PasswordRecovery";
 import Members from "./pages/admin/members/Members";
+import Projects from "./pages/admin/projects/Projets";
+import Donation from "./pages/admin/donation/Donation";
 
 function App() {
   const router = createBrowserRouter([
@@ -99,11 +101,11 @@ function App() {
             },
             {
               path: "/admin/projects",
-              element: <>projects</>,
+              element: <Projects />,
             },
             {
               path: "/admin/donations",
-              element: <>donations</>,
+              element: <Donation />,
             },
             {
               path: "/admin/stories",
