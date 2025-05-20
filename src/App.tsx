@@ -11,6 +11,7 @@ import DirectorLayout from "./pages/layouts/DirectorLayout";
 import DirectorDashboard from "./pages/director/dashboard/Dashboard";
 import AdminDashboard from "./pages/admin/dashboard/Dashboard";
 import PasswordRecovery from "./features/auth/PasswordRecovery";
+import Members from "./pages/admin/members/Members";
 
 function App() {
   const router = createBrowserRouter([
@@ -93,8 +94,8 @@ function App() {
               element: <AdminDashboard />,
             },
             {
-              path: "/admin/users",
-              element: <>users</>,
+              path: "/admin/members",
+              element: <Members />,
             },
             {
               path: "/admin/projects",
