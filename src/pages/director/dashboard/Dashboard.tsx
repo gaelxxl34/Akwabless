@@ -132,7 +132,7 @@ const DirectorDashboard: React.FC = () => {
               </span>
             </button>
             <a
-              href="https://readdy.ai/home/4ffb360f-2508-4942-b389-1a2d730a2d10/7089fe0f-61de-4f18-b215-132234aef6eb"
+              href="#"
               data-readdy="true"
               className={`flex items-center w-full px-4 py-3 rounded-lg text-left ${
                 activeTab === "members"

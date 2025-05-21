@@ -191,13 +191,16 @@ const AdminLayout = () => {
       <div className="flex-1 md:ml-64">
         {/* Top Navigation */}
         <header className="bg-white shadow-sm h-16 flex items-center justify-between px-6 sticky top-0 z-20">
-          <div className="flex items-center md:hidden">
+          <div className="flex items-center justify-between md:hidden">
             <button
               onClick={toggleSidebar}
               className="text-gray-500 hover:text-gray-700 cursor-pointer"
             >
               <i className="fas fa-bars text-xl"></i>
             </button>
+            <span className="font-bold text-xl text-[#D4AF37] mr-5 ml-5">
+              Akwabless
+            </span>
           </div>
 
           <div className="flex-1 md:flex md:items-center md:justify-between">
