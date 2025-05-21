@@ -107,26 +107,6 @@ const Settings = () => {
       className="p-6 xl:max-w-[calc(100vw-256px)]"
       style={{ width: "100vw" }}
     >
-      {/* Avatar Card */}
-      {/* <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center">
-            <div className="h-16 w-16 rounded-full bg-[#228B22] flex items-center justify-center text-white text-xl mr-4">
-              A
-            </div>
-            <div>
-              <h2 className="text-sm font-medium text-gray-500">Avatar</h2>
-              <p className="text-xs text-gray-500">
-                Upload PNG or JPG up to 2MB
-              </p>
-            </div>
-          </div>
-          <button className="px-4 py-2 border border-gray-300 rounded-md text-sm font-medium text-gray-700 hover:bg-gray-50 cursor-pointer whitespace-nowrap !rounded-button">
-            Upload
-          </button>
-        </div>
-      </div> */}
-
       <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
