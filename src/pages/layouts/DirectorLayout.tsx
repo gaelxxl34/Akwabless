@@ -249,13 +249,13 @@ const DirectorLayout = () => {
                     <i className="fas fa-cog mr-2"></i>
                     {language === "en" ? text.en.settings : text.fr.settings}
                   </Link>
-                  <a
-                    href="#"
+                  <Link
+                    to="/"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     <i className="fas fa-sign-out-alt mr-2"></i>
                     {language === "en" ? text.en.logout : text.fr.logout}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
