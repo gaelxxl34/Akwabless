@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { content } from "../../libs/data/visitorContentData";
 import { Link } from "react-router-dom";
 import Registration from "../../components/dialog/registration";
@@ -97,12 +97,14 @@ const Home = () => {
             {t.hero.subtitle}
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <button
-              onClick={() => setopenJoin(true)}
-              className="bg-[#D4AF37] hover:bg-[#C09B2D] text-white px-6 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap"
-            >
-              {t.hero.joinButton}
-            </button>
+            <a href="#">
+              <button
+                onClick={() => setopenJoin(true)}
+                className="bg-[#D4AF37] hover:bg-[#C09B2D] text-white px-6 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap"
+              >
+                {t.hero.joinButton}
+              </button>
+            </a>
             <a href="#projects">
               <button className="bg-transparent hover:bg-white/20 border-2 border-white text-white px-6 py-3 rounded-button text-lg font-medium transition-colors cursor-pointer whitespace-nowrap">
                 {t.hero.exploreButton}
