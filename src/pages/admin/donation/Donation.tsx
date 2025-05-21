@@ -155,7 +155,7 @@ const Donation = () => {
       className="p-6 xl:max-w-[calc(100vw-256px)]"
       style={{ width: "100vw" }}
     >
-      <div className="grid grid-cols-1 lg:grid-cols-2 lg:grid-cols-4 gap-6 mb-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 mb-6">
         <div className="bg-white rounded-lg shadow p-5">
           <div className="flex justify-between">
             <div>
