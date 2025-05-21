@@ -288,3 +288,209 @@ export const memberDonation = [
     status: "completed",
   },
 ];
+
+export const testimonials = [
+  {
+    id: 1,
+    name: "Marie Koné",
+    type: "video",
+    date: "2025-05-15",
+    project: "Centre Communautaire à Kinshasa",
+    status: "published",
+    content:
+      "Grâce à ce projet, ma famille a maintenant accès à l'eau potable. Cela a changé notre vie quotidienne de façon incroyable.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Portrait%20of%20an%20African%20woman%20in%20her%2030s%20smiling%20at%20camera%2C%20wearing%20colorful%20traditional%20clothing%2C%20natural%20lighting%2C%20professional%20photography%2C%20high%20quality%20image%2C%20simple%20neutral%20background%2C%20warm%20tones&width=300&height=200&seq=1&orientation=landscape",
+  },
+  {
+    id: 2,
+    name: "Jean Ouédraogo",
+    type: "written",
+    date: "2025-05-12",
+    project: "Programme de Formation Agricole",
+    status: "published",
+    content:
+      "La formation que j'ai reçue m'a permis d'améliorer mes techniques agricoles et d'augmenter ma production de 30%.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=African%20farmer%20standing%20in%20green%20field%2C%20wearing%20work%20clothes%2C%20holding%20farming%20tools%2C%20smiling%20proudly%20at%20camera%2C%20rural%20setting%2C%20natural%20lighting%2C%20professional%20photography%2C%20high%20quality%20image%2C%20simple%20neutral%20background&width=300&height=200&seq=2&orientation=landscape",
+  },
+  {
+    id: 3,
+    name: "Sophie Diallo",
+    type: "video",
+    date: "2025-05-10",
+    project: "Soutien aux Orphelinats",
+    status: "published",
+    content:
+      "Les enfants de notre orphelinat ont maintenant accès à une éducation de qualité et à des repas équilibrés tous les jours.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=African%20woman%20teacher%20with%20group%20of%20children%20in%20classroom%20setting%2C%20bright%20colorful%20classroom%2C%20children%20smiling%20and%20engaged%2C%20natural%20lighting%20through%20windows%2C%20professional%20photography%2C%20high%20quality%20image%2C%20simple%20neutral%20background&width=300&height=200&seq=3&orientation=landscape",
+  },
+  {
+    id: 4,
+    name: "Thomas Mensah",
+    type: "written",
+    date: "2025-05-08",
+    project: "Projet d'Accès à l'Eau",
+    status: "draft",
+    content:
+      "Notre village entier bénéficie maintenant d'un puits qui fournit de l'eau potable. Cela a réduit considérablement les maladies.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=African%20village%20with%20new%20water%20well%2C%20group%20of%20people%20gathering%20around%20well%2C%20rural%20setting%20with%20traditional%20houses%20in%20background%2C%20sunny%20day%2C%20natural%20lighting%2C%20professional%20photography%2C%20high%20quality%20image%2C%20simple%20neutral%20background&width=300&height=200&seq=4&orientation=landscape",
+  },
+  {
+    id: 5,
+    name: "Claire Abakar",
+    type: "video",
+    date: "2025-05-05",
+    project: "Centre Communautaire à Kinshasa",
+    status: "published",
+    content:
+      "Le nouveau centre communautaire est devenu un lieu de rassemblement important pour notre quartier, offrant des services essentiels.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Modern%20community%20center%20building%20in%20African%20setting%2C%20people%20gathering%20outside%2C%20urban%20environment%2C%20sunny%20day%2C%20natural%20lighting%2C%20professional%20photography%2C%20high%20quality%20image%2C%20simple%20neutral%20background&width=300&height=200&seq=5&orientation=landscape",
+  },
+  {
+    id: 6,
+    name: "Michel Touré",
+    type: "written",
+    date: "2025-05-03",
+    project: "Programme de Formation Agricole",
+    status: "published",
+    content:
+      "J'ai pu créer ma propre entreprise agricole grâce aux compétences acquises lors de la formation. Ma vie a complètement changé.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=African%20man%20in%20his%2040s%20standing%20proudly%20in%20front%20of%20small%20agricultural%20business%2C%20holding%20produce%2C%20rural%20marketplace%20setting%2C%20sunny%20day%2C%20natural%20lighting%2C%20professional%20photography%2C%20high%20quality%20image%2C%20simple%20neutral%20background&width=300&height=200&seq=6&orientation=landscape",
+  },
+  {
+    id: 7,
+    name: "Isabelle Ndiaye",
+    type: "video",
+    date: "2025-04-30",
+    project: "Soutien aux Orphelinats",
+    status: "draft",
+    content:
+      "En tant que directrice de l'orphelinat, je peux témoigner de l'impact positif que votre soutien a eu sur nos enfants.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Professional%20African%20woman%20in%20business%20attire%20standing%20in%20front%20of%20orphanage%20building%2C%20children%20playing%20in%20background%2C%20sunny%20day%2C%20natural%20lighting%2C%20professional%20photography%2C%20high%20quality%20image%2C%20simple%20neutral%20background&width=300&height=200&seq=7&orientation=landscape",
+  },
+  {
+    id: 8,
+    name: "Pierre Kamara",
+    type: "written",
+    date: "2025-04-28",
+    project: "Projet d'Accès à l'Eau",
+    status: "published",
+    content:
+      "Les femmes de notre village n'ont plus à marcher des kilomètres chaque jour pour chercher de l'eau. Cela leur permet de se consacrer à d'autres activités.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Group%20of%20African%20women%20gathering%20at%20water%20well%20in%20village%2C%20carrying%20water%20containers%2C%20rural%20setting%20with%20traditional%20houses%2C%20sunny%20day%2C%20natural%20lighting%2C%20professional%20photography%2C%20high%20quality%20image%2C%20simple%20neutral%20background&width=300&height=200&seq=8&orientation=landscape",
+  },
+];
+
+export const brochures = [
+  {
+    id: 1,
+    title: "Rapport Annuel 2025",
+    type: "rapport",
+    date: "2025-05-15",
+    category: "Rapports Annuels",
+    status: "active",
+    downloads: 245,
+    description:
+      "Rapport détaillé des activités et résultats de l'organisation pour l'année 2025.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Professional%2520annual%2520report%2520cover%2520with%2520gold%2520and%2520blue%2520accents%252C%2520clean%2520modern%2520design%252C%2520featuring%2520abstract%2520geometric%2520patterns%252C%2520high%2520quality%2520print%2520material%252C%2520professional%2520photography%252C%2520simple%2520elegant%2520background%2520with%2520subtle%2520texture&width=300&height=400&seq=1&orientation=portrait",
+  },
+  {
+    id: 2,
+    title: "Programme d'Aide à l'Agriculture",
+    type: "flyer",
+    date: "2025-05-12",
+    category: "Programmes",
+    status: "active",
+    downloads: 187,
+    description:
+      "Informations sur notre programme d'aide aux agriculteurs locaux pour améliorer leurs techniques et rendements.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Colorful%2520agriculture%2520program%2520flyer%2520with%2520images%2520of%2520African%2520farmers%2520working%2520in%2520fields%252C%2520vibrant%2520colors%252C%2520clean%2520layout%252C%2520professional%2520design%252C%2520high%2520quality%2520print%2520material%252C%2520simple%2520elegant%2520background%2520with%2520subtle%2520texture&width=300&height=400&seq=2&orientation=portrait",
+  },
+  {
+    id: 3,
+    title: "Catalogue des Projets 2025",
+    type: "catalogue",
+    date: "2025-05-10",
+    category: "Catalogues",
+    status: "active",
+    downloads: 156,
+    description:
+      "Présentation complète de tous les projets en cours et à venir pour l'année 2025.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Professional%2520project%2520catalog%2520cover%2520with%2520grid%2520layout%2520of%2520project%2520thumbnails%252C%2520modern%2520design%2520with%2520gold%2520accents%252C%2520clean%2520typography%252C%2520high%2520quality%2520print%2520material%252C%2520simple%2520elegant%2520background%2520with%2520subtle%2520texture&width=300&height=400&seq=3&orientation=portrait",
+  },
+  {
+    id: 4,
+    title: "Initiative Eau Potable",
+    type: "flyer",
+    date: "2025-05-08",
+    category: "Initiatives",
+    status: "inactive",
+    downloads: 92,
+    description:
+      "Présentation de notre initiative pour fournir de l'eau potable aux communautés rurales.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Clean%2520water%2520initiative%2520flyer%2520with%2520blue%2520color%2520scheme%252C%2520images%2520of%2520water%2520wells%2520and%2520African%2520communities%252C%2520modern%2520design%252C%2520professional%2520layout%252C%2520high%2520quality%2520print%2520material%252C%2520simple%2520elegant%2520background%2520with%2520subtle%2520texture&width=300&height=400&seq=4&orientation=portrait",
+  },
+  {
+    id: 5,
+    title: "Rapport d'Impact Social",
+    type: "rapport",
+    date: "2025-05-05",
+    category: "Rapports",
+    status: "active",
+    downloads: 208,
+    description:
+      "Analyse détaillée de l'impact social de nos programmes et initiatives dans les communautés.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Social%2520impact%2520report%2520cover%2520with%2520data%2520visualization%2520elements%252C%2520professional%2520design%2520with%2520gold%2520and%2520blue%2520accents%252C%2520images%2520of%2520diverse%2520African%2520communities%252C%2520high%2520quality%2520print%2520material%252C%2520simple%2520elegant%2520background%2520with%2520subtle%2520texture&width=300&height=400&seq=5&orientation=portrait",
+  },
+  {
+    id: 6,
+    title: "Programme Éducatif 2025",
+    type: "catalogue",
+    date: "2025-05-03",
+    category: "Éducation",
+    status: "active",
+    downloads: 175,
+    description:
+      "Présentation de notre programme éducatif pour les enfants défavorisés dans les zones rurales.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Educational%2520program%2520brochure%2520with%2520images%2520of%2520African%2520children%2520in%2520classroom%2520settings%252C%2520colorful%2520design%252C%2520professional%2520layout%252C%2520educational%2520icons%2520and%2520elements%252C%2520high%2520quality%2520print%2520material%252C%2520simple%2520elegant%2520background%2520with%2520subtle%2520texture&width=300&height=400&seq=6&orientation=portrait",
+  },
+  {
+    id: 7,
+    title: "Flyer Centre Communautaire",
+    type: "flyer",
+    date: "2025-04-30",
+    category: "Centres",
+    status: "inactive",
+    downloads: 65,
+    description:
+      "Informations sur notre nouveau centre communautaire à Kinshasa et les services proposés.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Community%2520center%2520flyer%2520with%2520images%2520of%2520modern%2520building%2520and%2520people%2520gathering%252C%2520vibrant%2520colors%252C%2520clean%2520layout%2520highlighting%2520services%2520offered%252C%2520professional%2520design%252C%2520high%2520quality%2520print%2520material%252C%2520simple%2520elegant%2520background%2520with%2520subtle%2520texture&width=300&height=400&seq=7&orientation=portrait",
+  },
+  {
+    id: 8,
+    title: "Catalogue des Formations",
+    type: "catalogue",
+    date: "2025-04-28",
+    category: "Formations",
+    status: "active",
+    downloads: 132,
+    description:
+      "Liste complète des formations professionnelles proposées par notre organisation.",
+    imageUrl:
+      "https://readdy.ai/api/search-image?query=Professional%2520training%2520catalog%2520cover%2520with%2520grid%2520layout%2520of%2520course%2520offerings%252C%2520modern%2520design%2520with%2520gold%2520accents%252C%2520images%2520of%2520people%2520in%2520training%2520sessions%252C%2520high%2520quality%2520print%2520material%252C%2520simple%2520elegant%2520background%2520with%2520subtle%2520texture&width=300&height=400&seq=8&orientation=portrait",
+  },
+];

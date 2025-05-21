@@ -14,6 +14,8 @@ import PasswordRecovery from "./features/auth/PasswordRecovery";
 import Members from "./pages/admin/members/Members";
 import Projects from "./pages/admin/projects/Projets";
 import Donation from "./pages/admin/donation/Donation";
+import Testimonies from "./pages/admin/testimonies/Testimonies";
+import Brochures from "./pages/admin/brochures/Brochures";
 
 function App() {
   const router = createBrowserRouter([
@@ -109,11 +111,11 @@ function App() {
             },
             {
               path: "/admin/stories",
-              element: <>stories</>,
+              element: <Testimonies />,
             },
             {
               path: "/admin/brochure-generator",
-              element: <>brochure-generator</>,
+              element: <Brochures />,
             },
             {
               path: "/admin/settings",
