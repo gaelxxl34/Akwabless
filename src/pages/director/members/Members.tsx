@@ -1,7 +1,9 @@
-import { useState, useEffect } from "react";
+// The exported code uses Tailwind CSS. Install Tailwind CSS in your dev environment to ensure all styles work.
+
+import React, { useState, useEffect } from "react";
 import { members, text } from "../../../libs/data/directorContentData";
 
-const Members = () => {
+const MembersDirector: React.FC = () => {
   const [language, setLanguage] = useState<"en" | "fr">("fr");
   const [activeTab, setActiveTab] = useState<string>("members");
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
@@ -95,10 +97,6 @@ const Members = () => {
       {/* Header Actions */}
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 space-y-4 md:space-y-0">
         <div className="flex flex-col md:flex-row md:items-center space-y-4 md:space-y-0 md:space-x-4">
-          <button className="bg-[#D4AF37] hover:bg-yellow-500 text-white px-4 py-2 rounded-lg flex items-center justify-center shadow-sm cursor-pointer !rounded-button whitespace-nowrap">
-            <i className="fas fa-plus mr-2"></i>
-            {language === "en" ? text.en.addMember : text.fr.addMember}
-          </button>
           <button className="bg-white hover:bg-gray-50 text-gray-700 border border-gray-300 px-4 py-2 rounded-lg flex items-center justify-center shadow-sm cursor-pointer !rounded-button whitespace-nowrap">
             <i className="fas fa-file-export mr-2"></i>
             {language === "en" ? text.en.export : text.fr.export}
@@ -295,12 +293,12 @@ const Members = () => {
                 >
                   {language === "en" ? text.en.status : text.fr.status}
                 </th>
-                <th
+                {/* <th
                   scope="col"
                   className="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider"
                 >
                   {language === "en" ? text.en.actions : text.fr.actions}
-                </th>
+                </th> */}
               </tr>
             </thead>
             <tbody className="bg-white divide-y divide-gray-200">
@@ -344,7 +342,7 @@ const Members = () => {
                       {member.status}
                     </span>
                   </td>
-                  <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                  {/* <td className="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
                     <div className="flex items-center justify-end space-x-2">
                       <button className="text-blue-600 hover:text-blue-800 cursor-pointer !rounded-button whitespace-nowrap">
                         <i className="fas fa-eye"></i>
@@ -359,7 +357,7 @@ const Members = () => {
                         <i className="fas fa-trash-alt"></i>
                       </button>
                     </div>
-                  </td>
+                  </td> */}
                 </tr>
               ))}
             </tbody>
@@ -495,4 +493,4 @@ const Members = () => {
   );
 };
 
-export default Members;
+export default MembersDirector;

@@ -164,7 +164,10 @@ const AdminDashboard: React.FC = () => {
 
   return (
     // DASHBOARD PAGE
-    <main className="p-6">
+    <main
+      className="p-6 xl:max-w-[calc(100vw-256px)]"
+      style={{ width: "100vw" }}
+    >
       {/* Welcome Banner */}
       <div className="bg-gradient-to-r from-[#F5F5DC] to-[#F8F8E8] rounded-xl p-6 mb-8 shadow-sm border border-[#D4AF37]/20">
         <h1 className="text-2xl font-bold  text-gray-800 mb-2">
@@ -296,7 +299,7 @@ const AdminDashboard: React.FC = () => {
       {/* Charts and Recent Activity */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
         {/* Project Status Chart */}
-        <div className="bg-white rounded-xl p-6 shadow-sm">
+        <div className="hidden lg:block bg-white rounded-xl p-6 shadow-sm">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-lg font-bold  text-gray-800">
               {language === "en"
@@ -311,7 +314,7 @@ const AdminDashboard: React.FC = () => {
         </div>
 
         {/* Monthly Donations Chart */}
-        <div className="bg-white rounded-xl p-6 shadow-sm">
+        <div className="hidden lg:block bg-white rounded-xl p-6 shadow-sm">
           <div className="flex justify-between items-center mb-6">
             <h3 className="text-lg font-bold  text-gray-800">
               {language === "en"

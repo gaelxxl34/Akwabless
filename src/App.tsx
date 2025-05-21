@@ -17,6 +17,12 @@ import Donation from "./pages/admin/donation/Donation";
 import Testimonies from "./pages/admin/testimonies/Testimonies";
 import Brochures from "./pages/admin/brochures/Brochures";
 import Settings from "./pages/admin/settings/Settings";
+import MembersDirector from "./pages/director/members/Members";
+import ProjectsDirector from "./pages/director/projects/Projets";
+import DonationDirector from "./pages/director/donation/Donation";
+import TestimoniesDirector from "./pages/director/testimonies/Testimonies";
+import BrochuresDirector from "./pages/director/brochures/Brochures";
+import SettingsDirector from "./pages/director/settings/Settings";
 
 function App() {
   const router = createBrowserRouter([
@@ -65,28 +71,28 @@ function App() {
               element: <DirectorDashboard />,
             },
             {
-              path: "/director/users",
-              element: <>users</>,
+              path: "/director/members",
+              element: <MembersDirector />,
             },
             {
               path: "/director/projects",
-              element: <>projects</>,
+              element: <ProjectsDirector />,
             },
             {
               path: "/director/donations",
-              element: <>donations</>,
+              element: <DonationDirector />,
             },
             {
               path: "/director/stories",
-              element: <>stories</>,
+              element: <TestimoniesDirector />,
             },
             {
               path: "/director/brochure-generator",
-              element: <>brochure-generator</>,
+              element: <BrochuresDirector />,
             },
             {
               path: "/director/settings",
-              element: <>settings</>,
+              element: <SettingsDirector />,
             },
           ],
         },
