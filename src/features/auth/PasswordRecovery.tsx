@@ -62,7 +62,7 @@ const PasswordRecovery: React.FC = () => {
       </Link>
       <div className="w-full max-w-4xl flex overflow-hidden rounded-lg shadow-xl">
         {/* Left side - Blue panel with welcome message */}
-        <div className="w-2/5 bg-[#D4AF37] text-white p-10 flex flex-col">
+        <div className="hidden md:flex md:flex-col w-2/5 bg-[#D4AF37] text-white p-10">
           <h1 className="text-4xl font-light mb-6">Password Recovery</h1>
           <p className="mb-4 text-white/90">
             Enter your email address below and we'll send you a link to reset
@@ -78,7 +78,7 @@ const PasswordRecovery: React.FC = () => {
         </div>
 
         {/* Right side - Password recovery form */}
-        <div className="w-3/5 bg-white p-10">
+        <div className="w-[96%] mx-auto md:w-3/5 bg-white p-10">
           <div className="max-w-md mx-auto">
             <div className="flex items-center mb-5">
               <div className="text-[#D4AF37] text-4xl mr-3">

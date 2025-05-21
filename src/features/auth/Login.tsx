@@ -73,13 +73,9 @@ const Login: React.FC = () => {
         </div>
         <span className="text-[#D4AF37]">Back to Home</span>
       </Link>
-      <div className="w-full max-w-4xl flex overflow-hidden rounded-lg shadow-xl">
+      <div className="w-screen max-w-4xl flex md:flex-row overflow-hidden rounded-lg shadow-xl">
         {/* Left side - Blue panel with welcome message */}
-        <div className="w-2/5 bg-[#D4AF37] text-white p-10 flex flex-col">
-          {/* <i className="fas fa-hands-helping text-white text-5xl"></i>
-            <div>
-              <h2 className="text-2xl font-bold text-white">Akwabless</h2>
-            </div> */}
+        <div className="hidden md:flex md:flex-col w-2/5 bg-[#D4AF37] text-white p-10 ">
           <h1 className="text-4xl font-light mb-6">Welcome back</h1>
 
           <p className="mb-4 text-white/90">
@@ -100,7 +96,7 @@ const Login: React.FC = () => {
         </div>
 
         {/* Right side - Login form */}
-        <div className="w-3/5 bg-white p-10">
+        <div className="w-[96%] mx-auto md:w-3/5 bg-white p-6 md:p-10">
           <div className="max-w-md mx-auto">
             <div className="flex items-center mb-4">
               <div className="text-[#D4AF37] text-4xl mr-3">
