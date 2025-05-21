@@ -16,6 +16,7 @@ import Projects from "./pages/admin/projects/Projets";
 import Donation from "./pages/admin/donation/Donation";
 import Testimonies from "./pages/admin/testimonies/Testimonies";
 import Brochures from "./pages/admin/brochures/Brochures";
+import Settings from "./pages/admin/settings/Settings";
 
 function App() {
   const router = createBrowserRouter([
@@ -119,7 +120,7 @@ function App() {
             },
             {
               path: "/admin/settings",
-              element: <>settings</>,
+              element: <Settings />,
             },
           ],
         },
