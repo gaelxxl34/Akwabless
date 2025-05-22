@@ -1,7 +1,6 @@
 import authImage from "./auth.jpg";
 import bgGreen from "./bgGreen.png";
 
-export default {
-  authImage,
-  bgGreen,
-};
+const images = { authImage, bgGreen };
+
+export default images;
