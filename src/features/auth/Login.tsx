@@ -88,7 +88,7 @@ const Login: React.FC = () => {
             </p>
           </Link>
 
-          <h1 className="text-4xl font-light mb-6">Welcome back</h1>
+          <h1 className="text-2xl font-light my-2">Welcome back</h1>
 
           <p className="mb-4 text-white/90">
             Please log in to continue. You’ll be able to access your account
@@ -107,18 +107,6 @@ const Login: React.FC = () => {
         {/* Right side - Login form */}
         <div className="w-[96%] mx-auto md:w-3/5 bg-white p-6 md:p-10">
           <div className="max-w-md mx-auto">
-            {/* <div className="flex items-center mb-4">
-              <div className="text-[#D4AF37] text-4xl mr-3">
-                <i className="fas fa-angle-right"></i>
-              </div>
-              <div>
-                <h2 className="text-3xl font-bold">Akwabless</h2>
-                <p className="text-gray-500 text-sm">
-                  Go back <span className="underline">to the home page</span>
-                </p>
-              </div>
-            </div> */}
-
             <h3 className="text-xl font-semibold mb-4">Login</h3>
 
             <div className="bg-[#F5F5DC] p-4 rounded-md mb-4">
