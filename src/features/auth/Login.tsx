@@ -192,12 +192,12 @@ const Login: React.FC = () => {
                   </label>
                 </div>
                 <div>
-                  <a
-                    href="/forget-password"
+                  <Link
+                    to="/forget-password"
                     className="text-sm text-[#D4AF37] hover:text-[#228B22] cursor-pointer"
                   >
                     Forgot password?
-                  </a>
+                  </Link>
                 </div>
               </div>
 
