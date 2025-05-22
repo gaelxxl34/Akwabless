@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Header from "../../components/visitor/Header";
+import images from "../../assets/images";
 
 const PasswordRecovery: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -49,28 +51,30 @@ const PasswordRecovery: React.FC = () => {
   }, [submitSuccess]);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 relative">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#f5cb4252] via-[#f9ffde] to-[#ffffff] w-full relative ">
+      <Header />
+
       {/* back home link */}
-      <Link
-        to="/"
-        className="absolute top-0 left-0 flex items-center p-3 cursor-pointer"
-      >
-        <div className="bg-transparent text-[#D4AF37] rounded-full w-6 h-6 flex items-center justify-center mr-1 ring-1 ring-[#D4AF37]">
-          <i className="fas fa-arrow-left"></i>
-        </div>
-        <span className="text-[#D4AF37]">Back to Home</span>
-      </Link>
-      <div className="w-full max-w-4xl flex overflow-hidden rounded-lg shadow-xl">
+
+      <div className="mt-9 w-full max-w-4xl flex overflow-hidden rounded-lg shadow-xl">
         {/* Left side - Blue panel with welcome message */}
         <div className="hidden md:flex md:flex-col w-2/5 bg-[#D4AF37] text-white p-10">
-          <h1 className="text-4xl font-light mb-6">Password Recovery</h1>
+          <Link to="/">
+            <p className="text-gray-500 text-sm flex items-center">
+              <div className="bg-transparent text-gray rounded-full w-6 h-6 mr-2 flex items-center justify-center ring-1 ring-[#D4AF37]">
+                <i className="fas fa-arrow-left"></i>
+              </div>
+              <span className="underline"> Go back to the home page</span>
+            </p>
+          </Link>
+          <h1 className="text-2xl font-light my-2">Password Recovery</h1>
           <p className="mb-4 text-white/90">
             Enter your email address below and we'll send you a link to reset
             your password and get back to managing your account.
           </p>
           <div className="mt-auto flex justify-center">
             <img
-              src="https://readdy.ai/api/search-image?query=secure%2520password%2520recovery%2520concept%2520with%2520shield%2520lock%2520email%2520verification%2520and%2520security%2520symbols%2520displayed%2520in%2520a%2520modern%2520minimalist%2520style%2520on%2520golden%2520background%2520color%2520D4AF37%2520professional%2520enterprise%2520design%2520with%2520subtle%2520geometric%2520patterns%2520and%2520soft%2520shadows%2520conveying%2520trust%2520and%2520reliability&width=300&height=200&seq=123457&orientation=squarish"
+              src={images.authImage}
               alt="Password Recovery Illustration"
               className="w-64"
             />
@@ -80,17 +84,15 @@ const PasswordRecovery: React.FC = () => {
         {/* Right side - Password recovery form */}
         <div className="w-[96%] mx-auto md:w-3/5 bg-white p-10">
           <div className="max-w-md mx-auto">
-            <div className="flex items-center mb-5">
+            {/* <div className="flex items-center mb-5">
               <div className="text-[#D4AF37] text-4xl mr-3">
                 <i className="fas fa-angle-right"></i>
               </div>
               <div>
                 <h2 className="text-3xl font-bold">Akwabless</h2>
-                {/* <p className="text-gray-500 text-sm">
-                  made by <span className="underline">Bora.Technology</span>
-                </p> */}
+            
               </div>
-            </div>
+            </div> */}
 
             <h3 className="text-xl font-semibold mb-4">Password Recovery</h3>
 
@@ -115,7 +117,7 @@ const PasswordRecovery: React.FC = () => {
             ) : (
               <div className="bg-[#F5F5DC] p-4 rounded-md mb-4">
                 <div className="flex items-start">
-                  <div className="bg-[#D4AF37] text-white rounded-full w-8 h-8 flex items-center justify-center mr-3 mt-0.5 mr-3">
+                  <div className="bg-[#D4AF37] text-white rounded-full w-8 h-8 flex items-center justify-center mt-0.5 mr-3">
                     <i className="fas fa-info"></i>
                   </div>
                   <div>
