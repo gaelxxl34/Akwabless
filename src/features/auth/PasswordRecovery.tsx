@@ -62,7 +62,7 @@ const PasswordRecovery: React.FC = () => {
 
       {/* back home link */}
 
-      <div className="mt-9 w-full max-w-4xl flex overflow-hidden rounded-lg shadow-xl">
+      <div className="absolute mt-9 w-full max-w-4xl flex overflow-hidden rounded-lg shadow-xl">
         {/* Left side - Blue panel with welcome message */}
         <div className="hidden md:flex md:flex-col w-2/5 bg-[#D4AF37] text-white p-10">
           <Link to="/">
