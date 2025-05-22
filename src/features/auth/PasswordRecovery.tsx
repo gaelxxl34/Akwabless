@@ -52,6 +52,12 @@ const PasswordRecovery: React.FC = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#f5cb4252] via-[#f9ffde] to-[#ffffff] w-full relative ">
+      <div
+        className="absolute inset-0 bg-cover bg-center blur-xl opacity-15"
+        style={{
+          backgroundImage: `url(${images.bgGreen})`,
+        }}
+      />
       <Header />
 
       {/* back home link */}

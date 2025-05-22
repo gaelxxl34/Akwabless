@@ -64,19 +64,16 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#f5cb4252] via-[#f9ffde] to-[#ffffff] w-full relative ">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#f5cb4252] via-[#f9ffde] to-[#ffffff] w-full relative">
+      <div
+        className="absolute inset-0 bg-cover bg-center blur-xl opacity-15"
+        style={{
+          backgroundImage: `url(${images.bgGreen})`,
+        }}
+      />
       <Header />
-      {/* back home link */}
-      {/* <Link
-        to="/"
-        className="absolute top-0 left-0 flex items-center p-3 cursor-pointer"
-      >
-        <div className="bg-transparent text-[#D4AF37] rounded-full w-6 h-6 flex items-center justify-center mr-1 ring-1 ring-[#D4AF37]">
-          <i className="fas fa-arrow-left"></i>
-        </div>
-        <span className="text-[#D4AF37]">Back to Home</span>
-      </Link> */}
-      <div className="mt-9 w-screen max-w-4xl flex md:flex-row overflow-hidden rounded-lg shadow-xl">
+
+      <div className="absolute mt-9 w-screen max-w-4xl flex md:flex-row overflow-hidden rounded-lg shadow-xl">
         {/* Left side - Blue panel with welcome message */}
         <div className="hidden md:flex md:flex-col w-2/5 bg-[#D4AF37] text-white p-10 cursor-pointer">
           <Link to="/">
