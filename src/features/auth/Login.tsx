@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Header from "../../components/visitor/Header";
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -62,9 +63,10 @@ const Login: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#F5F5DC] relative ">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-[#f5cb4252] via-[#f9ffde] to-[#ffffff] w-full relative ">
+      <Header />
       {/* back home link */}
-      <Link
+      {/* <Link
         to="/"
         className="absolute top-0 left-0 flex items-center p-3 cursor-pointer"
       >
@@ -72,20 +74,26 @@ const Login: React.FC = () => {
           <i className="fas fa-arrow-left"></i>
         </div>
         <span className="text-[#D4AF37]">Back to Home</span>
-      </Link>
-      <div className="w-screen max-w-4xl flex md:flex-row overflow-hidden rounded-lg shadow-xl">
+      </Link> */}
+      <div className="mt-9 w-screen max-w-4xl flex md:flex-row overflow-hidden rounded-lg shadow-xl">
         {/* Left side - Blue panel with welcome message */}
-        <div className="hidden md:flex md:flex-col w-2/5 bg-[#D4AF37] text-white p-10 ">
+        <div className="hidden md:flex md:flex-col w-2/5 bg-[#D4AF37] text-white p-10 cursor-pointer">
+          <Link to="/">
+            <p className="text-gray-500 text-sm flex items-center">
+              <div className="bg-transparent text-gray rounded-full w-6 h-6 mr-2 flex items-center justify-center ring-1 ring-[#D4AF37]">
+                <i className="fas fa-arrow-left"></i>
+              </div>
+              <span className="underline"> Go back to the home page</span>
+            </p>
+          </Link>
+
           <h1 className="text-4xl font-light mb-6">Welcome back</h1>
 
           <p className="mb-4 text-white/90">
             Please log in to continue. You’ll be able to access your account
             right away
           </p>
-          <p className="mb-4 text-white/90">
-            Please log in to continue. You’ll be able to access your account
-            right away
-          </p>
+
           <div className="mt-auto flex justify-center">
             <img
               src="https://readdy.ai/api/search-image?query=secure%2520password%2520recovery%2520concept%2520with%2520shield%2520lock%2520email%2520verification%2520and%2520security%2520symbols%2520displayed%2520in%2520a%2520modern%2520minimalist%2520style%2520on%2520golden%2520background%2520color%2520D4AF37%2520professional%2520enterprise%2520design%2520with%2520subtle%2520geometric%2520patterns%2520and%2520soft%2520shadows%2520conveying%2520trust%2520and%2520reliability&width=300&height=200&seq=123457&orientation=squarish"
@@ -98,17 +106,18 @@ const Login: React.FC = () => {
         {/* Right side - Login form */}
         <div className="w-[96%] mx-auto md:w-3/5 bg-white p-6 md:p-10">
           <div className="max-w-md mx-auto">
-            <div className="flex items-center mb-4">
+            {/* <div className="flex items-center mb-4">
               <div className="text-[#D4AF37] text-4xl mr-3">
                 <i className="fas fa-angle-right"></i>
               </div>
               <div>
                 <h2 className="text-3xl font-bold">Akwabless</h2>
                 <p className="text-gray-500 text-sm">
-                  {/* Go back <span className="underline">to the home page</span> */}
+                  Go back <span className="underline">to the home page</span>
                 </p>
               </div>
-            </div>
+            </div> */}
+
             <h3 className="text-xl font-semibold mb-4">Login</h3>
 
             <div className="bg-[#F5F5DC] p-4 rounded-md mb-4">
