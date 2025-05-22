@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Header from "../../components/visitor/Header";
+import images from "../../assets/images";
 
 const Login: React.FC = () => {
   const [email, setEmail] = useState("");
@@ -96,7 +97,7 @@ const Login: React.FC = () => {
 
           <div className="mt-auto flex justify-center">
             <img
-              src="https://readdy.ai/api/search-image?query=secure%2520password%2520recovery%2520concept%2520with%2520shield%2520lock%2520email%2520verification%2520and%2520security%2520symbols%2520displayed%2520in%2520a%2520modern%2520minimalist%2520style%2520on%2520golden%2520background%2520color%2520D4AF37%2520professional%2520enterprise%2520design%2520with%2520subtle%2520geometric%2520patterns%2520and%2520soft%2520shadows%2520conveying%2520trust%2520and%2520reliability&width=300&height=200&seq=123457&orientation=squarish"
+              src={images.authImage}
               alt="Password Recovery Illustration"
               className="w-64"
             />
